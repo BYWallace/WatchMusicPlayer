@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var currentSongLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // MARK: - IBActions
+    
+    @IBAction func playButtonPressed(sender: UIButton) {
+    }
+    
+    
+    @IBAction func playPreviousButtonPressed(sender: UIButton) {
+    }
+    
+    @IBAction func playNextButtonPressed(sender: UIButton) {
+    }
 }
 
