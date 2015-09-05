@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.configureAudioSession()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +37,22 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playNextButtonPressed(sender: UIButton) {
+    }
+    
+    // MARK: - Audio
+    
+    func configureAudioSession() {
+        self.audioSession = AVAudioSession.sharedInstance()
+        
+        var categoryError: NSError?
+        var activeError: NSError?
+        
+        self.audioSession.setCategory(AVAudioSessionCategoryPlayback, error: &categoryError)
+        println("error \(categoryError)")
+        var success = self.audioSession.setActive(true, error: &activeError)
+            if !success {
+            println("Error making audio session active \(activeError)")
+        }
     }
 }
 
