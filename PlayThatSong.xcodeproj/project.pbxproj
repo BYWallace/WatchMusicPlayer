@@ -10,6 +10,7 @@
 		FE0716571B9A770A0039F836 /* CLASSICAL SOLITUDE.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE0716541B9A770A0039F836 /* CLASSICAL SOLITUDE.wav */; };
 		FE0716581B9A770A0039F836 /* Open Source - Sending My Signal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */; };
 		FE0716591B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */; };
+		FE07165D1B9A78650039F836 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE07165C1B9A78650039F836 /* AVFoundation.framework */; };
 		FE73AE571B99BEFE002FC530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73AE561B99BEFE002FC530 /* AppDelegate.swift */; };
 		FE73AE591B99BEFE002FC530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73AE581B99BEFE002FC530 /* ViewController.swift */; };
 		FE73AE5C1B99BEFE002FC530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE73AE5A1B99BEFE002FC530 /* Main.storyboard */; };
@@ -66,6 +67,8 @@
 		FE0716541B9A770A0039F836 /* CLASSICAL SOLITUDE.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CLASSICAL SOLITUDE.wav"; sourceTree = "<group>"; };
 		FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Open Source - Sending My Signal.mp3"; sourceTree = "<group>"; };
 		FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Timothy Pinkham - The Knolls of Doldesh.mp3"; sourceTree = "<group>"; };
+		FE07165A1B9A78520039F836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE07165C1B9A78650039F836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FE73AE511B99BEFE002FC530 /* PlayThatSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayThatSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE73AE551B99BEFE002FC530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE73AE561B99BEFE002FC530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE07165D1B9A78650039F836 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,7 @@
 		FE73AE481B99BEFE002FC530 = {
 			isa = PBXGroup;
 			children = (
+				FE07165A1B9A78520039F836 /* AVFoundation.framework */,
 				FE73AE531B99BEFE002FC530 /* PlayThatSong */,
 				FE73AE691B99BEFE002FC530 /* PlayThatSongTests */,
 				FE73AE7B1B99BF3F002FC530 /* PlayThatSong WatchKit Extension */,
@@ -149,6 +154,7 @@
 		FE73AE541B99BEFE002FC530 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE07165C1B9A78650039F836 /* AVFoundation.framework */,
 				FE0716541B9A770A0039F836 /* CLASSICAL SOLITUDE.wav */,
 				FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */,
 				FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */,

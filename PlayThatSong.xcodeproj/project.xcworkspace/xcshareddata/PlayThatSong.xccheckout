@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>64C6E6D8-5EB8-4768-A575-D1288047F597</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PlayThatSong</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4565D7653AD0D3575FDDB2CA57BB82A9C1056A20</key>
+		<string>github.com:BYWallace/WatchMusicPlayer.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PlayThatSong.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4565D7653AD0D3575FDDB2CA57BB82A9C1056A20</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:BYWallace/WatchMusicPlayer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4565D7653AD0D3575FDDB2CA57BB82A9C1056A20</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4565D7653AD0D3575FDDB2CA57BB82A9C1056A20</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PlayThatSong</string>
+		</dict>
+	</array>
+</dict>
+</plist>
