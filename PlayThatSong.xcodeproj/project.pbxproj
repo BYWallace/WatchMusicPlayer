@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE0716571B9A770A0039F836 /* CLASSICAL SOLITUDE.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE0716541B9A770A0039F836 /* CLASSICAL SOLITUDE.wav */; };
+		FE0716581B9A770A0039F836 /* Open Source - Sending My Signal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */; };
+		FE0716591B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */; };
 		FE73AE571B99BEFE002FC530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73AE561B99BEFE002FC530 /* AppDelegate.swift */; };
 		FE73AE591B99BEFE002FC530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73AE581B99BEFE002FC530 /* ViewController.swift */; };
 		FE73AE5C1B99BEFE002FC530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE73AE5A1B99BEFE002FC530 /* Main.storyboard */; };
@@ -60,6 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE0716541B9A770A0039F836 /* CLASSICAL SOLITUDE.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "CLASSICAL SOLITUDE.wav"; sourceTree = "<group>"; };
+		FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Open Source - Sending My Signal.mp3"; sourceTree = "<group>"; };
+		FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Timothy Pinkham - The Knolls of Doldesh.mp3"; sourceTree = "<group>"; };
 		FE73AE511B99BEFE002FC530 /* PlayThatSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayThatSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE73AE551B99BEFE002FC530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE73AE561B99BEFE002FC530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +149,9 @@
 		FE73AE541B99BEFE002FC530 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE0716541B9A770A0039F836 /* CLASSICAL SOLITUDE.wav */,
+				FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */,
+				FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */,
 				FE73AE551B99BEFE002FC530 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -326,6 +335,9 @@
 			files = (
 				FE73AE5C1B99BEFE002FC530 /* Main.storyboard in Resources */,
 				FE73AE611B99BEFE002FC530 /* LaunchScreen.xib in Resources */,
+				FE0716571B9A770A0039F836 /* CLASSICAL SOLITUDE.wav in Resources */,
+				FE0716581B9A770A0039F836 /* Open Source - Sending My Signal.mp3 in Resources */,
+				FE0716591B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */,
 				FE73AE5E1B99BEFE002FC530 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +653,7 @@
 				FE73AE721B99BEFE002FC530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE73AE731B99BEFE002FC530 /* Build configuration list for PBXNativeTarget "PlayThatSongTests" */ = {
 			isa = XCConfigurationList;
@@ -649,6 +662,7 @@
 				FE73AE751B99BEFE002FC530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE73AE931B99BF3F002FC530 /* Build configuration list for PBXNativeTarget "PlayThatSong WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +671,7 @@
 				FE73AE951B99BF3F002FC530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE73AE961B99BF3F002FC530 /* Build configuration list for PBXNativeTarget "PlayThatSong WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +680,7 @@
 				FE73AE981B99BF3F002FC530 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
