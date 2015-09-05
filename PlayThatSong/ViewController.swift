@@ -41,6 +41,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func playNextButtonPressed(sender: UIButton) {
+        self.audioQueuePlayer.advanceToNextItem()
     }
     
     // MARK: - Audio
