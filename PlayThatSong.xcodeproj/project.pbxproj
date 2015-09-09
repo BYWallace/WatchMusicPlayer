@@ -11,6 +11,7 @@
 		FE0716581B9A770A0039F836 /* Open Source - Sending My Signal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE0716551B9A770A0039F836 /* Open Source - Sending My Signal.mp3 */; };
 		FE0716591B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */; };
 		FE07165D1B9A78650039F836 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE07165C1B9A78650039F836 /* AVFoundation.framework */; };
+		FE0E9B901B9FD4670058A5F6 /* WatchKitInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0E9B8F1B9FD4670058A5F6 /* WatchKitInfo.swift */; };
 		FE73AE571B99BEFE002FC530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73AE561B99BEFE002FC530 /* AppDelegate.swift */; };
 		FE73AE591B99BEFE002FC530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE73AE581B99BEFE002FC530 /* ViewController.swift */; };
 		FE73AE5C1B99BEFE002FC530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE73AE5A1B99BEFE002FC530 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		FE0716561B9A770A0039F836 /* Timothy Pinkham - The Knolls of Doldesh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Timothy Pinkham - The Knolls of Doldesh.mp3"; sourceTree = "<group>"; };
 		FE07165A1B9A78520039F836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FE07165C1B9A78650039F836 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE0E9B8F1B9FD4670058A5F6 /* WatchKitInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchKitInfo.swift; sourceTree = "<group>"; };
 		FE73AE511B99BEFE002FC530 /* PlayThatSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayThatSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE73AE551B99BEFE002FC530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE73AE561B99BEFE002FC530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				FE73AE561B99BEFE002FC530 /* AppDelegate.swift */,
 				FE73AE581B99BEFE002FC530 /* ViewController.swift */,
+				FE0E9B8F1B9FD4670058A5F6 /* WatchKitInfo.swift */,
 				FE73AE5A1B99BEFE002FC530 /* Main.storyboard */,
 				FE73AE5D1B99BEFE002FC530 /* Images.xcassets */,
 				FE73AE5F1B99BEFE002FC530 /* LaunchScreen.xib */,
@@ -382,6 +385,7 @@
 			files = (
 				FE73AE591B99BEFE002FC530 /* ViewController.swift in Sources */,
 				FE73AE571B99BEFE002FC530 /* AppDelegate.swift in Sources */,
+				FE0E9B901B9FD4670058A5F6 /* WatchKitInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

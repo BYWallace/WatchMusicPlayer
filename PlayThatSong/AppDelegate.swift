@@ -44,6 +44,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK:- WatchKit
     
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        let watchKitInformation = WatchKitInfo(playerDictionary: userInfo!, reply: reply)
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("WatchKitDidMakeRequest", object: watchKitInformation)
         
         reply(["Working": "Now"])
     }
