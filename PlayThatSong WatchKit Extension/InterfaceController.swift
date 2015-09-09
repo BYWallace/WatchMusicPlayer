@@ -11,6 +11,7 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
+    @IBOutlet weak var songTitleLabel: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -28,4 +29,14 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    // MARK: - IBActions
+    
+    @IBAction func previousSongButtonPressed() {
+    }
+    
+    @IBAction func nextSongButtonPressed() {
+    }
+    
+    @IBAction func playSongButtonPressed() {
+    }
 }
