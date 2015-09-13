@@ -169,5 +169,17 @@ class ViewController: UIViewController {
         
         return currentSong
     }
+    
+    // MARK: - WatchKit Notificaiton
+    
+    func handleRequest(notification: NSNotification) {
+        let watchKitInfo = notification.object! as! WatchKitInfo
+        
+        if watchKitInfo.playerRequest != nil {
+            let requestAction: String = watchKitInfo.playerRequest!
+            
+            self.playMusic()
+        }
+    }
 }
 
