@@ -14,25 +14,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentSongLabel: UILabel!
     
     var audioSession: AVAudioSession!
-//    var audioPlayer: AVAudioPlayer!
+    //    var audioPlayer: AVAudioPlayer!
     var audioQueuePlayer: AVQueuePlayer!
     var currentSongIndex: Int!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureAudioSession()
-//        self.configureAudioPlayer()
+        //        self.configureAudioPlayer()
         self.configureAudioQueuePlayer()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleRequest:"), name: "WatchKitDidMakeRequest", object: nil)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // MARK: - IBActions
     
     @IBAction func playButtonPressed(sender: UIButton) {
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func playPreviousButtonPressed(sender: UIButton) {
+    @IBAction func playPreviousButtonPressed(sender: AnyObject) {
         
         if currentSongIndex > 0 {
             self.audioQueuePlayer.pause()
@@ -54,12 +54,12 @@ class ViewController: UIViewController {
             }
             self.currentSongIndex = temporaryNowPlayIndex - 1
             self.audioQueuePlayer.seekToTime(kCMTimeZero, toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)
-            self.audioQueuePlayer.play()  
+            self.audioQueuePlayer.play()
         }
         self.updateUI()
     }
     
-    @IBAction func playNextButtonPressed(sender: UIButton) {
+    @IBAction func playNextButtonPressed(sender: AnyObject) {
         self.audioQueuePlayer.advanceToNextItem()
         self.currentSongIndex = self.currentSongIndex + 1
         self.updateUI()
@@ -76,21 +76,21 @@ class ViewController: UIViewController {
         self.audioSession.setCategory(AVAudioSessionCategoryPlayback, error: &categoryError)
         println("error \(categoryError)")
         var success = self.audioSession.setActive(true, error: &activeError)
-            if !success {
+        if !success {
             println("Error making audio session active \(activeError)")
         }
     }
     
-//    func configureAudioPlayer() {
-//        var songPath = NSBundle.mainBundle().pathForResource("Open Source - Sending My Signal", ofType: "mp3")
-//        var songURL = NSURL.fileURLWithPath(songPath!)
-//        println("songURL: \(songURL)")
-//        
-//        var songError: NSError?
-//        self.audioPlayer = AVAudioPlayer(contentsOfURL: songURL, error: &songError)
-//        println("song error: \(songError)")
-//        self.audioPlayer.numberOfLoops = 0
-//    }
+    //    func configureAudioPlayer() {
+    //        var songPath = NSBundle.mainBundle().pathForResource("Open Source - Sending My Signal", ofType: "mp3")
+    //        var songURL = NSURL.fileURLWithPath(songPath!)
+    //        println("songURL: \(songURL)")
+    //
+    //        var songError: NSError?
+    //        self.audioPlayer = AVAudioPlayer(contentsOfURL: songURL, error: &songError)
+    //        println("song error: \(songError)")
+    //        self.audioPlayer.numberOfLoops = 0
+    //    }
     
     func configureAudioQueuePlayer() {
         let songs = createSongs()
@@ -103,8 +103,8 @@ class ViewController: UIViewController {
     
     func playMusic() {
         // Implement to use the audioplayer we replaced this with the audio queue player
-//        self.audioPlayer.prepareToPlay()
-//        self.audioPlayer.play()
+        //        self.audioPlayer.prepareToPlay()
+        //        self.audioPlayer.play()
         
         if audioQueuePlayer.rate > 0 && audioQueuePlayer.error == nil {
             self.audioQueuePlayer.pause()
@@ -178,7 +178,18 @@ class ViewController: UIViewController {
         if watchKitInfo.playerRequest != nil {
             let requestAction: String = watchKitInfo.playerRequest!
             
-            self.playMusic()
+            switch requestAction {
+            case "Play":
+                self.playMusic()
+            case "Next":
+                self.playNextButtonPressed(self)
+            case "Previous":
+                self.playPreviousButtonPressed(self)
+            default:
+                println("default value printed, something went wrong")
+            }
+            
+            self.updateUI()
         }
     }
 }
