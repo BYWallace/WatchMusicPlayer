@@ -189,6 +189,9 @@ class ViewController: UIViewController {
                 println("default value printed, something went wrong")
             }
             
+            let currentSongDictionary = ["currentSong": currentSongName()]
+            watchKitInfo.replyBlock(currentSongDictionary)
+            
             self.updateUI()
         }
     }

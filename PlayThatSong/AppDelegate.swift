@@ -47,8 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let watchKitInformation = WatchKitInfo(playerDictionary: userInfo!, reply: reply)
         
         NSNotificationCenter.defaultCenter().postNotificationName("WatchKitDidMakeRequest", object: watchKitInformation)
-        
-        reply(["Working": "Now"])
     }
 
 }
